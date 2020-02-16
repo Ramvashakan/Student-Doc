@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradientbg"
+    tools:context=".sign_up">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:fontFamily="cursive"
+        android:text="SIGN UP "
+        android:textColor="#ffff"
+        android:textSize="60sp"
+        android:textStyle="italic|bold" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/username_inputsignup"
+        android:textColorHint="#FFFFFF"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_name"
+            android:layout_width="255dp"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_email"
+            android:drawableLeft="@drawable/ic_email"
+            android:layout_height="40dp"
+            android:hint="Enter the User Name"
+            android:textColor="#FFFFFF"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:textColorHint="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/email_inputsignup"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_email"
+            android:layout_width="255dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawableStart="@drawable/ic_email"
+            android:inputType="textEmailAddress"
+            android:layout_height="40dp"
+            android:hint="Enter the Email Id"
+           />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:textColorHint="#FFFFFF"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/password_inputsignup"
+        app:passwordToggleEnabled="true"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_password"
+            android:layout_width="255dp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/ic_password"
+            android:drawableStart="@drawable/ic_password"
+            android:hint="Enter the Password"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/conpass_inputsignup"
+        android:textColorHint="#FFFFFF"
+        app:passwordToggleEnabled="true"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signup_conpassword"
+            android:layout_width="255dp"
+            android:drawableStart="@drawable/ic_password"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_password"
+            android:layout_height="40dp"
+            android:hint="Confirm Password"
+
+           />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bn_submit"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/color_change" />
+
+    </LinearLayout>
+</ScrollView>
+

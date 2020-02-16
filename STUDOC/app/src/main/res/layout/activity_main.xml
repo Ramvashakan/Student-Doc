@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradientbg"
+    android:id="@+id/pager">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="105dp"
+        android:fontFamily="cursive"
+        android:text=" Login"
+        android:textColor="#FDFDFD"
+        android:textSize="100sp"
+        android:textStyle="bold|italic" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/username_input"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signin_username"
+            android:layout_marginTop="50dp"
+            android:layout_width="255dp"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_email"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Email id"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/password_input"
+        app:errorEnabled="true"
+        android:textColorHint="#FFFFFF"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signin_password"
+            android:layout_marginTop="50dp"
+            android:layout_width="255dp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_password"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Password"
+            android:drawableLeft="@drawable/ic_password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="Remember me"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bn_login"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/color_change"
+        />
+
+   <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/bn_signupinlogin"
+       android:layout_width="155dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:textStyle="bold|italic"
+       android:textColor="#FFFFFF"
+       android:layout_marginTop="50dp"
+       android:text="SignUP"
+       android:background="@drawable/color_change"/>
+
+    </LinearLayout>
+
+</ScrollView>
